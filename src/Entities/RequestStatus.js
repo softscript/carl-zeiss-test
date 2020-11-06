@@ -1,0 +1,7 @@
+export const INITIAL = 'initial'
+export const INPROGRESS = 'inprogress'
+export const OK = 'ok'
+export const ERROR = 'error'
+export const FORBIDDEN = 'forbidden'
+export const UNAUTHORIZED = 'unauthorized'
+export const INTERMIDIATE = 'intermidiate'

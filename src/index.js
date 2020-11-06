@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createBrowserHistory } from 'history'
+import { Provider, ReactReduxContext } from 'react-redux'
+
+import CreateStore from './Redux'
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import CarlTestRouter from './routes'
 
-ReactDOM.render(
+const history = createBrowserHistory()
+const store = CreateStore(history)
+const app = document.getElementById('carl-test')
+
+const render = Component => ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider key={Math.random()} store={store} context={ReactReduxContext}>
+    <Component history={history} store={store} context={ReactReduxContext} />
+    </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  app
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+render(CarlTestRouter)

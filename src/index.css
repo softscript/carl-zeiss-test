@@ -11,3 +11,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ct-login {
+  margin:0px auto;
+}
+
+.ct-header {
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+}
+.ct-main {
+  flex-grow: 1;
+  position: relative;
+  width: calc(100vw - 16rem);
+}
+.main-container {
+  top: 60px;
+}
+
+.topNav {
+  font-size: 17px;
+  background-color: #eaeaea;
+  color: #1b1717;
+  width: 100%;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.link-div {
+  cursor: pointer;
+}
+/* BLOGS */
+.blog-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.blog-body {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

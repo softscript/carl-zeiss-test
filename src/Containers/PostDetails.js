@@ -36,7 +36,7 @@ class PostDetails extends PureComponent {
         return (
             <Fragment>
                 {disabledControls ? (
-                    <div className="d-flex align-self-center">
+                    <div className="text-center">
                         <Spinner animation="border" variant="primary" />
                     </div>
                 ) : (
@@ -58,9 +58,8 @@ class PostDetails extends PureComponent {
                                 {isObjectWithKey(postDetails) && (<Col sm={12} md={12} xs={12}>
                                     <Card>
                                         <Card.Body>
-                                            <Card.Title>Card Title</Card.Title>
-                                            <Card.Subtitle className="mb-2 text-muted">{postDetails.title}</Card.Subtitle>
-                                            <Card.Text>{postDetails.body}</Card.Text>
+                                            <Card.Title>{postDetails.title}</Card.Title>
+                                             <Card.Text>{postDetails.body}</Card.Text>
                                         </Card.Body>
                                     </Card>
                                 </Col>

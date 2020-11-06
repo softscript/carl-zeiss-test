@@ -58,7 +58,7 @@ const PostsList = ({ posts }) => {
                                             pathname: RoutePaths.POSTS.URI + `/${post.id}`
                                         })}
                                     >
-                                        <Button variant="link">Link</Button>
+                                        <Button variant="link">View Details</Button>
                                     </Link>
                             </Card.Body>
                         </Card>
